@@ -7,7 +7,6 @@ public class Artikel {
     private boolean stempelrelevant;
 
     // Constructor
-
     public Artikel(String name, String size, double price, boolean stempelrelevant) {
         this.name = name;
         this.size = size;
@@ -16,7 +15,6 @@ public class Artikel {
     }
 
     // Get Methoden
-
     public String getName() { return name; }
     public String getSize() { return size; }
     public double getPrice() { return price; }
