@@ -10,7 +10,7 @@ public class Main {
         Scanner sc;
         sc = new Scanner(System.in);
 
-        Menu bestellung = new Menu(5); // bereits abgestempelte Felder
+        Menu bestellung = new Menu(); // bereits abgestempelte Felder
 
         System.out.println("Willkommen im McCafe! Wählen Sie Ihr Getränk aus dem Menü:");
         bestellung.showMenu();

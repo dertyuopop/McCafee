@@ -7,12 +7,12 @@ import java.util.List;
 public class Menu {
     private List<Artikel> menu;
     private List<Artikel> bestellung;
-    private int stempelCount;
 
-    public Menu(int stempel) {
-        this.menu = loadMenu();
-        this.bestellung = new ArrayList<>();
-        this.stempelCount = stempel;
+    public Menu() {
+
+    }
+    public List<Artikel> getBestellung(){
+        return bestellung;
     }
 
     // Statische Kaffee-Liste
