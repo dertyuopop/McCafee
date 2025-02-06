@@ -1,46 +1,30 @@
 package McCafe;
 
-import java.util.ArrayList;
-
 public class Artikel {
+    private String name;
+    private String size;
+    private double price;
+    private boolean stempelrelevant;
 
-    // Atribute
+    // Constructor
 
-   private String name;
-   private double price;
-   private char größe;
-
-   // Constructor
-
-    public Artikel(String name, double price,char größe){
-        this.price = price;
-        this.größe = größe;
+    public Artikel(String name, String size, double price, boolean stempelrelevant) {
         this.name = name;
-    }
-
-   // Get und Set Methoden
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public char getGröße() {
-        return größe;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setGröße(char größe) {
-        this.größe = größe;
-    }
-
-    public void setPrice(double price) {
+        this.size = size;
         this.price = price;
+        this.stempelrelevant = stempelrelevant;
     }
 
+    // Get Methoden
+
+    public String getName() { return name; }
+    public String getSize() { return size; }
+    public double getPrice() { return price; }
+    public boolean isStempelrelevant() { return stempelrelevant; }
+
+    // To String Methode
+    @Override
+    public String toString() {
+        return name + " (" + size + ") - " + price + "€";
+    }
 }

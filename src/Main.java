@@ -1,6 +1,6 @@
-import McCafe.Artikel;
+import McCafe.Menu;
+import McCafe.Rechnung;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -9,46 +9,19 @@ public class Main {
 
         Scanner sc;
         sc = new Scanner(System.in);
-        int ProduktEingabe;
-        int mengeauswahl;
-        double gesamtsumme;
-        int auswahl;
-        boolean stopSchleife;
 
-        ArrayList<Double> artikel = new ArrayList<Double>();
-        stopSchleife = true;
-        gesamtsumme = 0;
+        Menu bestellung = new Menu(5); // bereits abgestempelte Felder
 
-        Artikel ca;
-        ca = new Artikel("ca",1.99, 'M');
-        Artikel es;
-        es = new Artikel("es",0.99,'M');
-        
+        System.out.println("Willkommen im McCafe! Wählen Sie Ihr Getränk aus dem Menü:");
+        bestellung.showMenu();
 
-        while (stopSchleife){
+        while (true) {
+            System.out.print("Geben Sie die Nummer der Kaffeespezialität ein (oder -1 zum Beenden): ");
+            int wahl = sc.nextInt();
+            if (wahl == -1) break;
+            bestellung.addKaffee(wahl);
 
-            System.out.println("Was möchten sie Bestellen :");
-            System.out.println("1 = ca");
-            System.out.println("2 = es");
-            System.out.println("3 = bestellung abschliessen");
-
-            auswahl = sc.nextInt();
-            if (auswahl == 1){
-                artikel.add(ca.getPrice());
-            } else if (auswahl == 2){
-                artikel.add(es.getPrice());
-            } else if (auswahl == 3) {
-                stopSchleife = false;
-            }
-            System.out.println();
         }
-
-        System.out.println("Ihre Gesammt summe beträgt ");
-        for (int i = 0; i < artikel.size(); i++) {
-            gesamtsumme = gesamtsumme + artikel.get(i);
-        }
-        System.out.println(gesamtsumme + "€");
 
     }
-
 }
