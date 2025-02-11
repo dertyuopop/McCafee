@@ -9,6 +9,7 @@ public class Main {
 
         Scanner sc;
         sc = new Scanner(System.in);
+        double gesamtbetrag = 0;
 
         Menu bestellung = new Menu(5); // bereits abgestempelte Felder
 
@@ -22,6 +23,8 @@ public class Main {
             bestellung.addKaffee(wahl);
 
         }
+        bestellung.rechnung();
+
 
     }
 }
