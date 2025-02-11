@@ -9,7 +9,8 @@ public class Menu {
     private List<Artikel> bestellung;
 
     public Menu() {
-
+        this.menu = loadMenu();
+        this.bestellung = new ArrayList<>();
     }
     public List<Artikel> getBestellung(){
         return bestellung;

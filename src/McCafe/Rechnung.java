@@ -5,5 +5,5 @@ import java.util.List;
 import McCafe.Menu;
 
 public class Rechnung {
-    Menu menu = new Menu();
+    Menu bestellung = new Menu();
 }
