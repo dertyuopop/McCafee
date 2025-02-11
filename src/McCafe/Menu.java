@@ -9,10 +9,19 @@ public class Menu {
     private List<Artikel> bestellung;
     private int stempelCount;
 
+<<<<<<< HEAD
     public Menu(int stempel) {
         this.menu = loadMenu();
         this.bestellung = new ArrayList<>();
         this.stempelCount = stempel;
+=======
+    public Menu() {
+        this.menu = loadMenu();
+        this.bestellung = new ArrayList<>();
+    }
+    public List<Artikel> getBestellung(){
+        return bestellung;
+>>>>>>> 3ae44c321a9b5f4514538f34aeb3db48ebb4f9ba
     }
 
     // Statische Kaffee-Liste
