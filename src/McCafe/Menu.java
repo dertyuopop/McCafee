@@ -7,15 +7,12 @@ import java.util.List;
 public class Menu {
     private List<Artikel> menu;
     private List<Artikel> bestellung;
-    double gesamtbetrag = 0;
+    private int stempelCount;
 
     public Menu(int stempel) {
         this.menu = loadMenu();
         this.bestellung = new ArrayList<>();
-    }
-
-    public List<Artikel> getBestellung() {
-        return bestellung;
+        this.stempelCount = stempel;
     }
 
     // Statische Kaffee-Liste
@@ -50,13 +47,6 @@ public class Menu {
         } else {
             System.out.println("Ungültige Auswahl.");
         }
-    }
-
-    public void rechnung(){
-        for (int i = 0; i < bestellung.size(); i++) {
-            gesamtbetrag = bestellung.get(i).getPrice() + gesamtbetrag;
-        }
-        System.out.println("Ihr gesammtbetrag ist " + gesamtbetrag + "€");
     }
 
     public void showMenu() {
