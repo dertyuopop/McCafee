@@ -7,14 +7,12 @@ import java.util.List;
 public class Menu {
     private List<Artikel> menu;
     private List<Artikel> bestellung;
-    double gesamtbetrag = 0;
 
-    public Menu(int stempel) {
+    public Menu() {
         this.menu = loadMenu();
         this.bestellung = new ArrayList<>();
     }
-
-    public List<Artikel> getBestellung() {
+    public List<Artikel> getBestellung(){
         return bestellung;
     }
 
@@ -52,12 +50,7 @@ public class Menu {
         }
     }
 
-    public void rechnung(){
-        for (int i = 0; i < bestellung.size(); i++) {
-            gesamtbetrag = bestellung.get(i).getPrice() + gesamtbetrag;
-        }
-        System.out.println("Ihr gesammtbetrag ist " + gesamtbetrag + "€");
-    }
+    // Bestellung
 
     public void showMenu() {
         for (int i = 0; i < menu.size(); i++) {
