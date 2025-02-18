@@ -4,10 +4,9 @@ public class Artikel {
     private String name;
     private String size;
     private double price;
-    private boolean stempelrelevant;
+    private boolean stempelrelevant = istStempelrelevant();
 
     // Constructor
-
     public Artikel(String name, String size, double price, boolean stempelrelevant) {
         this.name = name;
         this.size = size;
@@ -16,11 +15,15 @@ public class Artikel {
     }
 
     // Get Methoden
-
     public String getName() { return name; }
     public String getSize() { return size; }
     public double getPrice() { return price; }
     public boolean isStempelrelevant() { return stempelrelevant; }
+
+    //Überprüfe ob relevant für Stempelkarte
+    public boolean istStempelrelevant() {
+        return size.equalsIgnoreCase("groß");
+    }
 
     // To String Methode
     @Override
