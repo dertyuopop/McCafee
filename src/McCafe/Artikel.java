@@ -4,7 +4,7 @@ public class Artikel {
     private String name;
     private String size;
     private double price;
-    private boolean stempelrelevant = istStempelrelevant();
+    private boolean stempelrelevant;
 
     // Constructor
     public Artikel(String name, String size, double price, boolean stempelrelevant) {
