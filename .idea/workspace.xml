@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f63dba5c-f20f-457b-801c-762476688297" name="Changes" comment="New Ver">
+    <list default="true" id="f63dba5c-f20f-457b-801c-762476688297" name="Changes" comment="Vereinfachen der Main.Java&#10;ShowMenu() und alles aus Main.Java in eine Methode ShowUserMenu() zusammengeführt und getestet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MCcafe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCcafe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MCcafe/McCafe/Artikel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCcafe/McCafe/Artikel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MCcafe/McCafe/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCcafe/McCafe/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MCcafe/McCafe/Rechnung.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/McCafe/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/McCafe/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,7 @@
       <workItem from="1739270979599" duration="1487000" />
       <workItem from="1739272764542" duration="1151000" />
       <workItem from="1739351717811" duration="44000" />
-      <workItem from="1740483387582" duration="372000" />
+      <workItem from="1740483387582" duration="1958000" />
     </task>
     <task id="LOCAL-00001" summary="New Ver">
       <option name="closed" value="true" />
@@ -102,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740483604730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Vereinfachen der Main.Java&#10;ShowMenu() und alles aus Main.Java in eine Methode ShowUserMenu() zusammengeführt und getestet">
+      <option name="closed" value="true" />
+      <created>1740483934971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740483934971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New Ver" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Ver" />
+    <MESSAGE value="Vereinfachen der Main.Java&#10;ShowMenu() und alles aus Main.Java in eine Methode ShowUserMenu() zusammengeführt und getestet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vereinfachen der Main.Java&#10;ShowMenu() und alles aus Main.Java in eine Methode ShowUserMenu() zusammengeführt und getestet" />
   </component>
 </project>

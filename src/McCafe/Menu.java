@@ -52,26 +52,10 @@ public class Menu {
     }
 
     // Bestellung
-    public void showUserMenu(){
-        Scanner sc;
-        sc = new Scanner(System.in);
-        double gesamtbetrag = 0;
-
-        Menu bestellung = new Menu(); // bereits abgestempelte Felder
-
+    public void showMenu(){
         System.out.println("Willkommen im McCafe! Wählen Sie Ihr Getränk aus dem Menü:");
-
         for (int i = 0; i < menu.size(); i++) {
             System.out.println(i + ": " + menu.get(i));
         }
-
-        while (true) {
-            System.out.print("Geben Sie die Nummer der Kaffeespezialität ein (oder -1 zum Beenden): ");
-            int wahl = sc.nextInt();
-            if (wahl == -1) break;
-            bestellung.addKaffee(wahl);
-
-        }
-
     }
 }
